@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+
+  body {
+    @apply bg-body;
+  }
+
+  h2 {
+    @apply font-bold text-2xl text-nc1;
+  }
+
+  h3 {
+    @apply font-normal text-nc1 text-xs;
+  }
+
+  h4 {
+    @apply font-bold text-xs text-nc1;
+  }
+
+  p {
+    @apply font-normal text-xs text-nc1;
+  }
+
+  a {
+    @apply font-normal text-xs text-link underline underline-offset-2 duration-200;
+  }
+}
+
+@layer utilities {
+  nav svg {
+    @apply w-6 h-6;
+  }
+
+  a:hover {
+    @apply text-blue-900 font-medium;
+  }
+}
